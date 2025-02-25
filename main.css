@@ -15,7 +15,7 @@ html, body {
     margin: 0 auto;
 }
 
-.header-box {
+.title-content {
     text-align: center;
     align-self: center;
 }
@@ -31,9 +31,6 @@ header h2 {
 }
 
 .title-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     width: 100vw;
     background-color: #393E41;
@@ -47,12 +44,72 @@ header h2 {
     background-color: #E2C044;
 }
 
-  .bottom {
+.bottom {
     position: absolute;
     bottom: 0;
-  }
-
-.title-images {
-    width: 5vw;
-    height: 5vw;
 }
+
+/* Title Page Images */
+.title-images {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Ensuring the position of all title images is absolute by applying it to the parent div class */
+.title-images > div {
+    position: absolute;
+}
+
+/* Applying a height and width to all title images */
+.title-images img {
+    width: 12vw;
+    height: 12vw;
+}
+
+.einstein-title-image {
+    top: 1vh;
+    left: 24vw;
+}
+.curie-title-image {
+    top: 1vh;
+    right: 24vw;
+}
+.gandhi-title-image {
+    top: 13vh;
+    left: 11vw;
+}
+.davinci-title-image {
+    top: 13vh;
+    right: 11vw;
+}
+.kleopatra-title-image {
+    top: 38vh;
+    left: 5vw;
+}
+.mandela-title-image {
+    top: 38vh;
+    right: 5vw;
+}
+.king-title-image {
+    bottom: 12vh;
+    left: 3vw;
+}
+.nightingale-title-image {
+    bottom: 12vh;
+    right: 3vw;
+}
+.churchill-title-image {
+    bottom: 9vh;
+    right: 17vw;
+}
+.newton-title-image {
+    bottom: 9vh;
+    left: 17vw;
+}
+
+    
+
+    
+
+    
