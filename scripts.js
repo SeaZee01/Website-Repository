@@ -1,27 +1,62 @@
 /* eslint-env browser */
-
 (function () {
     "use strict";
 
-    // Defining Variables
-    var titlePage = document.querySelector('.title-page'),
-        slideAmount = 90, // The amount the page elements will slide up
-        console = window.console,
-        elements;
+    // Defining the console function
+    var console = window.console || {
+        log: function () {},
+        error: function () {},
+        warn: function () {},
+        info: function () {}
+    };
 
-    if (titlePage) {
-        titlePage.addEventListener('click', function () {
-            // Ensuring the elements affected include the title-page div and it's children 
-            elements = [titlePage].concat(Array.from(titlePage.querySelectorAll('*')));
-            
-            
-            elements.forEach(function (element) {
-                // Slide each element up by changing its transform property
-                element.style.transform = "translateY(-" + slideAmount + "vh)"; // Sliding the elements up using it's transform property and setting the reference to value to 'viewport height' (vh)
-                element.style.transition = 'transform 1s ease'; // Setting the slide duration and ease
+    // Ensuring that the DOM is loaded before running the script
+    window.addEventListener('DOMContentLoaded', function () {
+
+        // Defining elements
+        var titlePage = document.querySelector('.title-page'),
+            pageTrim = document.querySelector('.page-trim'),
+            siteLogo = document.querySelector('.site-logo'),
+            titleImages = document.querySelector('.title-images'),  // Select the 'title-images' container
+
+            // Defining slide amounts for each element
+            titlePageSlideAmount = 87,
+            pageTrimSlideAmount = 0,
+            siteLogoSlideAmount = 1.5,
+            titleImagesSlideAmount = 30;  // Define slide amount for the 'title-images' container
+
+        // Console log to ensure the elements are correctly selected
+        console.log('titlePage:', titlePage);
+        console.log('pageTrim:', pageTrim);
+        console.log('siteLogo:', siteLogo);
+        console.log('titleImages:', titleImages);
+
+        // Check if 'titlePage' exists before adding the event listener
+        if (titlePage) {
+            titlePage.addEventListener('click', function () {
+                console.log('Click event triggered!');  // Confirm click event
+
+                // Define elements and their slide amounts
+                var elements = [
+                    {element: titlePage, slideAmount: titlePageSlideAmount},
+                    {element: pageTrim, slideAmount: pageTrimSlideAmount},
+                    {element: siteLogo, slideAmount: siteLogoSlideAmount},
+                    {element: titleImages, slideAmount: titleImagesSlideAmount}
+                ];
+
+                // Apply the sliding effect for each individual element
+                elements.forEach(function (item) {
+                    var element = item.element,
+                        slideAmount = item.slideAmount;
+
+                    // Applying the slide effect by using transform and transition
+                    if (element) {
+                        element.style.transform = "translateY(-" + slideAmount + "vh)";
+                        element.style.transition = 'transform 1s ease';
+                    }
+                });
             });
-        });
-    } else {
-        console.error("Error: 'title-page' div not found.");
-    }
+        }
+
+    });
 }());
