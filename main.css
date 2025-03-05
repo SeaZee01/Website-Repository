@@ -18,12 +18,12 @@ html, body {
 .title {
     position: absolute;
     z-index: 3;
-    left: 30vw;
-    top: 30vh;
+    left: 20.5vw;
+    top: 42vh;
 }
 
-.title-one {
-    width: 40vw; /* Adjust the width as needed */
+.site-title{
+    width: 60vw; /* Adjust the width as needed */
 }
 
 .title-page {
@@ -55,6 +55,7 @@ html, body {
 /* Title Page Images */
 .title-images {
     position: relative;
+    z-index: 4;
     width: 100%;
     height: 100%;
 }
@@ -115,7 +116,6 @@ html, body {
     z-index: 1;
 }
 
-
 h1 {
     font-family: 'EB Garamond';
 }
@@ -131,7 +131,7 @@ h2 {
     text-align: center;
 }
 
-p {
+p1 {
     width: 30vw;
     height: 40vh;
     padding: 20px;
@@ -143,6 +143,21 @@ p {
     position: absolute;
     right: 20vw;
     top: 50vh;
+}
+
+.arrow-left img {
+    width: 3vw;
+    height: auto;
+    left: 2vw;
+    top: 55vh;
+    position: absolute;
+}
+.arrow-right img {
+    width: 3vw;
+    height: auto;
+    right: 2vw;
+    top: 55vh;
+    position: absolute;
 }
     
 .einstein-main-image img {
@@ -164,6 +179,5 @@ footer {
     padding: 2vw;
 }
 
-    
 
     
