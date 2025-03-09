@@ -23,7 +23,7 @@ html, body {
 }
 
 .site-title{
-    width: 60vw; /* Adjust the width as needed */
+    width: 60vw;
 }
 
 .title-page {
@@ -32,6 +32,7 @@ html, body {
     width: 100vw;
     background-color: #393E41;
     z-index: 2;
+    cursor: pointer;
 }
 
 .page-trim {
@@ -60,7 +61,7 @@ html, body {
     height: 100%;
 }
 
-/* Ensuring the position of all title images is absolute by applying it to the parent div class */
+/* Ensuring the position of all title images is absolute */
 .title-images > div {
     position: absolute;
 }
@@ -145,12 +146,14 @@ p1 {
     top: 50vh;
 }
 
+
 .arrow-left img {
     width: 3vw;
     height: auto;
     left: 2vw;
     top: 55vh;
     position: absolute;
+    cursor: pointer;
 }
 .arrow-right img {
     width: 3vw;
@@ -158,15 +161,85 @@ p1 {
     right: 2vw;
     top: 55vh;
     position: absolute;
+    cursor: pointer;
 }
-    
-.einstein-main-image img {
-    width: 75vh;
-    height: 75vh;
-    position: absolute;
-    left: 15vw;
-    top: 25vh;
+
+/* Formatting and positioning all main images*/
+.main-images {
+    display: flex;                    
+    justify-content: flex-start;       
+    align-items: center;               
+    width: 100vw;                      
+    height: 100vh;                     
+    overflow-x: hidden;                
+    padding: 0 2vw;                    
+    position: relative;              
 }
+
+/* Styling the image containers*/
+.main-images div {
+    position: absolute;              
+    height: 75vh;                      
+    width: auto;                       
+    cursor: pointer;
+    margin-top: 25vh;               
+}
+
+/* Positioning the images with 100vw intervals */
+.einstein-main-image {
+    left: 7vw;                         
+}
+
+.curie-main-image {
+    left: 107vw;                       
+}
+
+.gandhi-main-image {
+    left: 207vw;                      
+}
+
+.davinci-main-image {
+    left: 307vw;                      
+}
+
+.kleopatra-main-image {
+    left: 407vw;                      
+}
+
+.mandela-main-image {
+    left: 507vw;                     
+}
+
+.king-main-image {
+    left: 607vw;                       
+}
+
+.nightingale-main-image {
+    left: 707vw;                       
+}
+
+.churchill-main-image {
+    left: 807vw;                      
+}
+
+.newton-main-image {
+    left: 907vw;                     
+}
+
+/* Styling the images */
+.main-images img {
+    height: 100%;                   
+    width: auto;                     
+    object-fit: contain;               
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Scale figure images when hovering over them */
+.main-images img:hover {
+    transform: scale(1.1);         
+}
+
 
 footer {
     position: absolute;
