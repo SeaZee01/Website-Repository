@@ -117,6 +117,60 @@ html, body {
     z-index: 1;
 }
 
+
+.einstein-main-content {
+    position: absolute;
+    top: 5vh;
+    left: 100vw;
+}
+.curie-main-content {
+    position: absolute; 
+    top: 5vh;
+    left: 200vw;
+}
+.gandhi-main-content {
+    position: absolute;
+    top: 5vh;
+    left: 300vw;
+}
+.davinci-main-content {
+    position: absolute;
+    top: 5vh;
+    left: 400vw;
+}
+.kleopatra-main-content {
+    position: absolute; 
+    top: 5vh;
+    left: 500vw;
+}
+.mandela-main-content {
+    position: absolute;
+    top: 5vh;
+    left: 600vw;
+}
+.king-main-content {
+    position: absolute;
+    top: 5vh;
+    left: 700vw;
+}
+.nightingale-main-content {
+    position: absolute; 
+    top: 5vh;
+    left: 800vw;
+}
+.churchill-main-content {
+    position: absolute;
+    top: 5vh;
+    left: 900vw;
+}
+.newton-main-content {
+    position: absolute;
+    top: 5vh;
+    left: 1000vw;
+}
+
+
+
 h1 {
     font-family: 'EB Garamond';
 }
@@ -124,9 +178,9 @@ h1 {
 h2 {
     color: white;
     font-family: 'EB Garamond'; font-size: 32px; 
-    right: 20vw;
-    top: 44vh;
-    width: 30vw;
+    right: 13vw;
+    top: 42vh;
+    width: 40vw;
     height: 40vh;
     position: absolute;
     text-align: center;
@@ -142,7 +196,7 @@ p1 {
     background-color: rgba(88,123,127,0.5);
     border-radius: 25px;
     position: absolute;
-    right: 20vw;
+    right: 18vw;
     top: 50vh;
 }
 
@@ -171,8 +225,7 @@ p1 {
     align-items: center;               
     width: 100vw;                      
     height: 100vh;                     
-    overflow-x: hidden;                
-    padding: 0 2vw;                    
+    overflow-x: hidden;                                  
     position: relative;              
 }
 
@@ -185,45 +238,46 @@ p1 {
     margin-top: 25vh;               
 }
 
-/* Positioning the images with 100vw intervals */
+/* Positioning the images and content with 100vw intervals */
 .einstein-main-image {
-    left: 7vw;                         
+    left: 12vw;                         
 }
 
 .curie-main-image {
-    left: 107vw;                       
+    left: 112vw;    
 }
 
+
 .gandhi-main-image {
-    left: 207vw;                      
+    left: 212vw;                      
 }
 
 .davinci-main-image {
-    left: 307vw;                      
+    left: 312vw;                      
 }
 
 .kleopatra-main-image {
-    left: 407vw;                      
+    left: 412vw;                      
 }
 
 .mandela-main-image {
-    left: 507vw;                     
+    left: 512vw;                     
 }
 
 .king-main-image {
-    left: 607vw;                       
+    left: 612vw;                       
 }
 
 .nightingale-main-image {
-    left: 707vw;                       
+    left: 712vw;                       
 }
 
 .churchill-main-image {
-    left: 807vw;                      
+    left: 812vw;                      
 }
 
 .newton-main-image {
-    left: 907vw;                     
+    left: 912vw;                     
 }
 
 /* Styling the images */

@@ -25,40 +25,48 @@
             isSlideUp = false,
             customSlideDownAmount = 42,
             customScaleDownAmount = 0.8;
-        
-        // Function to update the positions of images
-        function updateImagePositions() {
-            var images = document.querySelectorAll('.main-images div');  // Select all the images
+
+        // Function to update the positions of images and content
+        function updatePositions() {
+            var images = document.querySelectorAll('.main-images div'),
+                content = document.querySelectorAll('.main-content div');
+
             images.forEach(function (image, index) {
                 var offset = currentPosition + (index * 100);  // Calculate the new position for each image
                 image.style.transform = 'translateX(' + offset + 'vw)';  // Apply the new position
                 image.style.transition = 'transform 1s ease';  // Smooth transition
             });
+
+            content.forEach(function (cont, index) {
+                var offset = currentPosition + (index * 100);  // Calculate the new position for each content
+                cont.style.transform = 'translateX(' + offset + 'vw)';  // Apply the new position
+                cont.style.transition = 'transform 1s ease';  // Smooth transition
+            });
         }
 
         // Function to slide images (left arrow)
         function slideLeft() {
-            currentPosition -= 200;  // Move images to the left by 100vw
-            updateImagePositions();
+            currentPosition += 200;  // Move images to the left by 100vw
+            updatePositions();
         }
 
         // Function to slide images (right arrow)
         function slideRight() {
-            currentPosition += 200;  // Move images to the right by 100vw
-            updateImagePositions();
+            currentPosition -= 200;  // Move images to the right by 100vw
+            updatePositions();
         }
 
         // Event listeners for clicking the arrows
         if (leftArrow) {
             leftArrow.addEventListener('click', function () {
-                // Slide images to the left
+                // Slide images and content to the left
                 slideLeft();
             });
         }
 
         if (rightArrow) {
             rightArrow.addEventListener('click', function () {
-                // Slide images to the right
+                // Slide images and content to the right
                 slideRight();
             });
         }
@@ -123,3 +131,4 @@
 
     });  // End of DOMContentLoaded event listener
 }());  // End of IIFE
+
