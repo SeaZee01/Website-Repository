@@ -21,10 +21,10 @@
             siteTitle = document.querySelector('.title'),
             leftArrow = document.querySelector('.arrow-left'),
             rightArrow = document.querySelector('.arrow-right'),
-            currentPosition = 0, // Initial position of the slide
-            isSlideUp = false, // Flag to check whether the page is in the slide-up state
-            customSlideDownAmount = 42, // Custom slide-down amount for the site title
-            customScaleDownAmount = 0.8; // Custom scale-down amount for the site title
+            currentPosition = 0,
+            isSlideUp = false,
+            customSlideDownAmount = 42,
+            customScaleDownAmount = 0.8;
 
         // Defining variables for the function used for updating image and content positions
         function updatePositions() {
@@ -151,7 +151,7 @@
                 isSlideUp = !isSlideUp;
             });
         } else {
-            console.warn('titlePage element not found!'); // 
+            console.warn('titlePage element not found!');
         }
 
         // Update position function (this allows the arrow opacity to update based off the active position)
