@@ -115,8 +115,17 @@ html, body {
 
 .main-page {
     z-index: 1;
+    height: 100vh;
 }
 
+.main-content {
+    justify-content: flex-start;                    
+    width: 100vw;                      
+    height: 100vh;  
+    bottom: 55vw;
+    overflow-x: hidden;                                  
+    position: relative;  
+}
 
 .einstein-main-content {
     position: absolute;
@@ -168,8 +177,6 @@ html, body {
     top: 5vh;
     left: 1000vw;
 }
-
-
 
 h1 {
     font-family: 'EB Garamond';
