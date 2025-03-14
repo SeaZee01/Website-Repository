@@ -240,6 +240,7 @@ p1 {
 
 /* Styling the image containers*/
 .main-images div {
+    z-index: 2;
     position: absolute;              
     height: 75vh;                      
     width: auto;                       
@@ -249,8 +250,8 @@ p1 {
 
 /* Positioning the images and content with 100vw intervals */
 .einstein-main-image {
-    left: 12vw;                         
-}
+    left: 12vw;      
+    }
 
 .curie-main-image {
     left: 112vw;    

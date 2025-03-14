@@ -159,4 +159,3 @@
 
     });  // End of DOMContentLoaded event listener
 }());  // End of IIFE
-
