@@ -1,20 +1,20 @@
+/* General Styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 html, body {
     background-color: #D3D0CB;
     height: 100%;
     margin: 0;
 }
-
 .container {
     width: 80%;
     margin: 0 auto;
 }
 
+/* Positioning the title */
 .title {
     position: absolute;
     z-index: 4;
@@ -22,10 +22,12 @@ html, body {
     top: 42vh;
 }
 
+/* Scaling the title image */
 .site-title{
     width: 60vw;
 }
 
+/* Title page container styling */
 .title-page {
     position: absolute;
     height: 100vh;
@@ -35,6 +37,7 @@ html, body {
     cursor: pointer;
 }
 
+/* Creating a page trim */
 .page-trim {
     align-self: center;
     position: relative;
@@ -43,6 +46,7 @@ html, body {
     background-color: #E2C044;
 }
 
+/* Logo styling */
 .site-logo {
     height: 7.5vh;
     width: 7.5vh;
@@ -53,7 +57,7 @@ html, body {
     bottom: 0;
 }
 
-/* Title Page Images */
+/* Title images container styling */
 .title-images {
     position: relative;
     z-index: 5;
@@ -61,17 +65,18 @@ html, body {
     height: 100%;
 }
 
-/* Ensuring the position of all title images is absolute */
+/* Setting position of all title images to absolute */
 .title-images > div {
     position: absolute;
 }
 
-/* Applying a height and width to all title images */
+/* Scaling all title images */
 .title-images img {
     width: 12vw;
     height: 12vw;
 }
 
+/* Positioning the title images */
 .einstein-title-image {
     top: 1vh;
     left: 24vw;
@@ -113,11 +118,13 @@ html, body {
     left: 17vw;
 }
 
+/* Main page styling */
 .main-page {
     z-index: 1;
     height: 100vh;
 }
 
+/* Main content container styling */
 .main-content {
     justify-content: flex-start;                    
     width: 100vw;                      
@@ -127,6 +134,7 @@ html, body {
     position: relative;  
 }
 
+/* Styling individual main content classes */
 .einstein-main-content {
     position: absolute;
     top: 5vh;
@@ -178,10 +186,10 @@ html, body {
     left: 1000vw;
 }
 
+/* Styling for text containers */
 h1 {
     font-family: 'EB Garamond';
 }
-
 h2 {
     color: white;
     font-family: 'EB Garamond'; font-size: 32px; 
@@ -192,7 +200,6 @@ h2 {
     position: absolute;
     text-align: center;
 }
-
 h3 {
     color: white;
     font-family: 'EB Garamond'; font-size: 40px; 
@@ -203,7 +210,6 @@ h3 {
     position: absolute;
     text-align: center;
 }
-
 p1 {
     width: 30vw;
     height: 40vh;
@@ -217,14 +223,13 @@ p1 {
     right: 18vw;
     top: 50vh;
 }
-
 p2 {
     width: 50vw;
-    height: 80vh;
+    height: 110vh;
     padding: 20px;
     font-family: Verdana, Geneva, sans-serif;
     color: #393E41;
-    text-align: center;
+    text-align: left;
     background-color: rgba(88,123,127,0.5);
     border-radius: 25px;
     position: absolute;
@@ -232,7 +237,7 @@ p2 {
     top: 30vh;
 }
 
-
+/* Styling for arrows */
 .arrow-left img {
     z-index: 2;
     width: 3vw;
@@ -263,7 +268,7 @@ p2 {
     position: relative;              
 }
 
-/* Styling the image containers*/
+/* Main image container styling*/
 .main-images div {
     z-index: 2;
     position: absolute;              
@@ -273,43 +278,34 @@ p2 {
     margin-top: 25vh;               
 }
 
-/* Positioning the images and content with 100vw intervals */
+/* Positioning the main images */
 .einstein-main-image {
     left: 12vw;      
     }
-
 .curie-main-image {
     left: 112vw;    
 }
-
 .gandhi-main-image {
     left: 212vw;                      
 }
-
 .davinci-main-image {
     left: 312vw;                      
 }
-
 .kleopatra-main-image {
     left: 412vw;                      
 }
-
 .mandela-main-image {
     left: 512vw;                     
 }
-
 .king-main-image {
     left: 612vw;                       
 }
-
 .nightingale-main-image {
     left: 712vw;                       
 }
-
 .churchill-main-image {
     left: 812vw;                      
 }
-
 .newton-main-image {
     left: 912vw;                     
 }
@@ -328,14 +324,102 @@ p2 {
     transform: scale(1.1);         
 }
 
-.info-content {
-    justify-content: flex-start;                    
-    width: 100vw;                      
-    height: 100vh;  
-    overflow-x: hidden;                                  
-    position: relative;  
+/* Info images container styling*/
+.info-images {
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; 
+    overflow-x: hidden; 
+    display: flex; 
+    justify-content: flex-start;
 }
 
+/* 'Who' images container styling */
+.who-images {
+    position: relative;
+    width: 15vw;
+    height: auto;
+}
+
+/* 'Who' images styling */
+.who-images img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+/* 'Accomplishments' images container styling */
+.acc-images {
+    position: relative;
+    width: 15vw;
+    height: auto;
+}
+
+/* 'Accomplishments' images styling */
+.acc-images img {
+    width: 100%;
+    height: auto;
+    position:relative;
+}
+
+/* Positioning 'Who' info images */
+.einstein-who-1 {
+    left: 8vw;
+    top: 15vh;  
+    z-index: 1;
+}
+.einstein-who-2 {
+    left: 23.5vw;
+    top: 35vh;
+    z-index: 2;
+}
+.einstein-who-3 {
+    left: 8vw;
+    top: 47vh;
+    z-index: 3;
+}
+.einstein-who-4 {
+    left: 23.5vw;
+    top: 67vh; 
+    z-index: 4;
+}
+
+/* Positioning 'Accomplishments' info images */
+.einstein-acc-1 {
+    left: 93vw;
+    top: 15vh;  
+    z-index: 1;
+}
+.einstein-acc-2 {
+    left: 108.5vw; 
+    top: 5vh; 
+    z-index: 2;
+}
+.einstein-acc-3 {
+    left: 93vw; 
+    top: -13vh;  
+    z-index: 3;
+}
+.einstein-acc-4 {
+    left: 108.5vw; 
+    top: -23vh;  
+    z-index: 4;
+}
+
+/* Info content container styling */
+.info-content {
+    justify-content: flex-start;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;  
+    top: -5vh;  
+}
+
+/* Styling content boxes */
 .info-content-one {
     position: absolute;
     top: 5vh;
@@ -347,6 +431,7 @@ p2 {
     left: 200vw;
 }
 
+/* Styling website footer */
 footer {
     position: absolute;
     align-content: center;

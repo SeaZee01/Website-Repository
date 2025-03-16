@@ -33,7 +33,7 @@
 
         // Defining variables for the function used for updating image and content positions
         function updatePositions() {
-            var images = document.querySelectorAll('.main-images div'),
+            var images = document.querySelectorAll('.info-images div'),
                 content = document.querySelectorAll('.info-content div');
 
             // Updating all element positions during the sliding function
