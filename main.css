@@ -366,44 +366,44 @@ h3 {
 }
 
 /* Positioning 'Who' info images */
-.einstein-who-1 {
+.who-1 {
     left: 8vw;
     top: 15vh;  
     z-index: 1;
 }
-.einstein-who-2 {
+.who-2 {
     left: 23.5vw;
     top: 35vh;
     z-index: 2;
 }
-.einstein-who-3 {
+.who-3 {
     left: 8vw;
     top: 47vh;
     z-index: 3;
 }
-.einstein-who-4 {
+.who-4 {
     left: 23.5vw;
     top: 67vh; 
     z-index: 4;
 }
 
 /* Positioning 'Accomplishments' info images */
-.einstein-acc-1 {
+.acc-1 {
     left: 93vw;
     top: 15vh;  
     z-index: 1;
 }
-.einstein-acc-2 {
+.acc-2 {
     left: 108.5vw; 
     top: 5vh; 
     z-index: 2;
 }
-.einstein-acc-3 {
+.acc-3 {
     left: 93vw; 
     top: -13vh;  
     z-index: 3;
 }
-.einstein-acc-4 {
+.acc-4 {
     left: 108.5vw; 
     top: -23vh;  
     z-index: 4;
