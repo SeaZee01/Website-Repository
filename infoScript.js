@@ -34,7 +34,8 @@
         // Defining variables for the function used for updating image and content positions
         function updatePositions() {
             var images = document.querySelectorAll('.info-images div'),
-                content = document.querySelectorAll('.info-content div');
+                content = document.querySelectorAll('.info-content div'),
+                videos = document.querySelectorAll('.info-videos');
 
             // Updating all element positions during the sliding function
             images.forEach(function (image, index) {
@@ -44,11 +45,19 @@
             });
 
             // Updating all content positions during the sliding function
-            content.forEach(function (cont, index) {
+            content.forEach(function (contents, index) {
                 var offset = currentPosition + (index * 100);
-                cont.style.transform = 'translateX(' + offset + 'vw)';
-                cont.style.transition = 'transform 1s ease';
+                contents.style.transform = 'translateX(' + offset + 'vw)';
+                contents.style.transition = 'transform 1s ease';
             });
+            
+            // Updating all video positions during the sliding function
+            videos.forEach(function (video, index) {
+                var offset = currentPosition + (index * 100);
+                video.style.transform = 'translateX(' + offset + 'vw)';
+                video.style.transition = 'transform 1s ease';
+            });
+
 
             if (leftArrow) {
                 // Making the arrow fully opaque when clickable
@@ -83,7 +92,7 @@
         // Function to slide images and content right
         function slideRight() {
             // If there is content to display on the right, slide left
-            if (currentPosition > -1800) {
+            if (currentPosition > -300) {
                 currentPosition -= 200;
                 updatePositions();
             }
