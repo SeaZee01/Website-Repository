@@ -75,7 +75,6 @@ html, body {
     visibility: visible;
 }
 
-
 /* Positioning the title */
 .title {
     position: absolute;
@@ -332,7 +331,7 @@ h3 {
 
 /* Main image container styling*/
 .main-images div {
-    z-index: 2;
+    z-index: 1;
     position: absolute;              
     height: 75vh;                      
     width: auto;                       
