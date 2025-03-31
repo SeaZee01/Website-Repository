@@ -20,6 +20,62 @@ html, body {
     margin: 0 auto;
 }
 
+.popup-one {
+    position: absolute;
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+    z-index: 6;
+}
+.popup-one .popup-one-text {
+    visibility: hidden;
+    width: 10%;
+    top: 75vh;
+    left: 44.5vw;
+    background-color: rgba(88,123,127,0.75);
+    font-family: Verdana, Geneva, sans-serif;
+    color: white;
+    border-width: thin;
+    border-color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 0;
+}
+.popup-one:hover .popup-one-text {
+  visibility: visible;
+}
+.popup-two {
+    position: absolute;
+    display: inline-block;
+    width: 4vw;
+    height: 7.5vh;
+    z-index: 6;
+    top: 1vh;
+}
+.popup-two .popup-two-text {
+    visibility: hidden;
+    width: 265%;
+    height: 75%;
+    background-color: rgba(88, 123, 127, 0.75);
+    font-family: Verdana, Geneva, sans-serif;
+    color: white;
+    border-width: thin;
+    border-color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 0;
+    left: 5vw;
+    top: 1vh;
+}
+.popup-two:hover .popup-two-text {
+    visibility: visible;
+}
+
+
 /* Positioning the title */
 .title {
     position: absolute;
