@@ -2,26 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Setting up the viewport for resizing -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Setting the site title -->
     <title>Legends and Luminaries</title>
+    <!-- Adding the Garamond font for use in my site -->
     <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet'>
+    <!-- Linking my stylesheet -->
     <link rel="stylesheet" href="main.css">
+    <!-- Linking the relevent script-->
     <script src="scripts.js" defer></script> 
 </head>
 <body>
+    <!-- Creating a div class for the title page -->
     <div class="title-page"> 
+        <!-- Creating a div for the title page pop-up guide -->
         <div class="popup-one">
             <span class="popup-one-text"><b>Click Anywhere!</b></span>
         </div>
+        <!-- Creating a div class for the objects at the bottom of the title page -->
         <div class="bottom">
+            <!-- Adding the site logo to the title page -->
             <img src="images/ws_logo.png" alt="Knight Logo" class="site-logo">
+            <!-- Adding the gold page trim to the title page -->
             <div class="page-trim"></div>
         </div>   
+        <!-- Adding the image used as the website title -->
         <div class="title">        
             <img src="images/ws_title.png" alt="Legends and Luminaries Title" class="site-title">
         </div>
+        <!-- Creating a div class for all the images on the title page -->
         <div class="title-images">
+        <!-- All of the following images follow the same format demonstrated below -->
+            <!-- Creating a div class that contains the image -->
             <div class="einstein-title-image">
+                <!-- Adding the image element itself -->
                 <img src="images/ti_albert-einstein.jpg" alt="Albert Einstein">
             </div>
             <div class="curie-title-image">
@@ -53,10 +68,16 @@
             </div>
         </div>
     </div>
+    <!-- Creating a div class for the main page -->
     <div class="main-page"> 
+        <!-- Creating a div class for all the images on the main page -->
         <div class="main-images">
+        <!-- All of the following images follow the same format demonstrated below -->
+            <!-- Creating a div class that contains the image -->
             <div class="einstein-main-image">
+                <!-- Linking the image to the dedicated page when clicked -->
                 <a href="einstein.html">
+                    <!-- Adding the image element itself -->
                     <img src="images/mp_einstein.png" alt="Albert Einstein">
                 </a>
             </div>
@@ -106,15 +127,24 @@
                 </a>
             </div>
         </div>
+            <!-- Creating the div that contains the image for the left arrow -->
             <div class="arrow-left">
+                <!-- Adding the image element itself -->
                 <img src="images/arrow-left.png" alt="Arrow Left">
             </div>
+            <!-- Creating the div that contains the image for the left arrow -->
             <div class="arrow-right">
+                <!-- Adding the image element itself -->
                 <img src="images/arrow-right.png" alt="Arrow Right">
             </div>
+        <!-- Creating a div class for all content elements on the main page -->
         <div class="main-content">
+        <!-- All of the following content elements follow the same format demonstrated below -->
+            <!-- Creating a div class to contain the relevent content -->
             <div class="einstein-main-content">
+                <!-- Creating a header containing the individual's name -->
                 <h2>ALBERT EINSTEIN</h2>
+                <!-- Creating the paragraph (with defined class) containing a basic description of the individual -->
                 <p class="p1"> A German-born theoretical physicist who revolutionized modern physics with his theory of relativity and the famous equation E=mc². <br><br> Einstein's work laid the foundation for much of 20th-century physics and continues to influence scientific thought today...
                 </p>
             </div>
@@ -164,9 +194,11 @@
                 </p>
             </div>
         </div>
+        <!-- Creating the footer that contains my contact information -->
         <footer>
             <h1>    CONTACT INFORMATION:</h1>
             <p><br>    Organisation Email: daniel.meyer@kingsway.school.nz <br>or<br>Personal Email: dlmeyernz@gmail.com</p>
+            <p class="copyright"> Copyright © Daniel Meyer 2025</p>
         </footer>
     </div>
 </body>

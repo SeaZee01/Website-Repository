@@ -519,5 +519,11 @@ footer {
     padding: 2vw;
 }
 
+.copyright {
+    position: absolute;
+    font-family: Verdana, Geneva, sans-serif;
+    left: 39.5vw;
+    bottom: 1vh;  
+}
 
     
