@@ -1,48 +1,62 @@
-/* General Styling */
+/* Styling to be applied universally*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Styling for everything within the html and body sections */
 html, body {
+    /* Changing the background colour and ensuring the div covers the entire page */
     background-color: #D3D0CB;
     height: 100%;
     margin: 0;
 }
 
+/* Styling for the info pages */
 .info-page {
+    /* Ensuring the info-page div covers all of the screen */
     height: 100%;
+    /* Disabling scrolling on the info-pages to prevent scrolling error caused by iframes */
     overflow: hidden;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
+/* Styling for pop-ups */
+/* Principles of the following styling applies to the second pop up as well */
+/* This is essentially the detector for the pop up */
 .popup-one {
+    /* Ensuring the position of the detector is not affected by parent divs */
     position: absolute;
     display: inline-block;
+    /* Positioning and layering the pop up detector */
     width: 100vw;
     height: 100vh;
     z-index: 6;
 }
 .popup-one .popup-one-text {
+    /* Making the pop-up hidden by default */
     visibility: hidden;
+    /* Scaling and positioning the pop-up */
     width: 10%;
     top: 75vh;
     left: 44.5vw;
+    /* Changing the pop-up background colour and adding a border */
     background-color: rgba(88,123,127,0.75);
-    font-family: Verdana, Geneva, sans-serif;
-    color: white;
     border-width: thin;
     border-color: black;
+    /* Changing font type and colour, as well as aligning the text to the center of the pop up */
+    font-family: Verdana, Geneva, sans-serif;
+    color: white;
     text-align: center;
+    /* Adding padding and bevelling the corners of the pop up */
     border-radius: 6px;
     padding: 8px 0;
+    /* Ensuring the pop-up position is not affected by the parent divs */
     position: absolute;
+    /* Ensuring the pop-up is on the correct layer */
     z-index: 0;
 }
+/* When hovering over the detector, make the pop-up visible */
 .popup-one:hover .popup-one-text {
   visibility: visible;
 }
@@ -77,7 +91,9 @@ html, body {
 
 /* Positioning the title */
 .title {
+    /* Ensuring the title position isn't affected by the parent divs */
     position: absolute;
+    /* Layering and positioning the title */
     z-index: 4;
     left: 20.5vw;
     top: 42vh;
@@ -90,37 +106,48 @@ html, body {
 
 /* Title page container styling */
 .title-page {
+    /* Ensuring the title page position is not affected by parent divs */
     position: absolute;
+    /* Scaling title page div */
     height: 100vh;
     width: 100vw;
+    /* Setting background colour and z-index layer */
     background-color: #393E41;
     z-index: 3;
+    /* Changing the cursor to 'pointer' when hovering over this div */
     cursor: pointer;
 }
 
-/* Creating a page trim */
+/* Page trim styling */
 .page-trim {
+    /* Positioning the trim relative to the title page */
     align-self: center;
     position: relative;
+    /* Scaling page trim */
     height: 2vh;
     width: 100vw;
+    /* Setting the colour of the page trim */
     background-color: #E2C044;
 }
 
-/* Logo styling */
+/* Scaling the website logo */
 .site-logo {
     height: 7.5vh;
     width: 7.5vh;
 }
 
+/* Styling the bottom div, used for the title page */
 .bottom {
+    /* Set the position of this div to the bottom of the title page */
     position: absolute;
     bottom: 0;
 }
 
 /* Title images container styling */
 .title-images {
+    /* Assigning the position - relative for the title slide mechanic to function */
     position: relative;
+    /* Layering and scaling the title images div */
     z-index: 5;
     width: 100%;
     height: 100%;
@@ -179,7 +206,7 @@ html, body {
     left: 17vw;
 }
 
-/* Main page styling */
+/* Positioning and layering the main page div */
 .main-page {
     z-index: 1;
     height: 100vh;
@@ -187,17 +214,24 @@ html, body {
 
 /* Main content container styling */
 .main-content {
-    justify-content: flex-start;                    
+    /* Scaling main content container */
     width: 100vw;                      
     height: 100vh;  
+    /* Positioning the main content container */
     bottom: 55vw;
-    overflow-x: hidden;                                  
+    justify-content: flex-start; 
+    /* Hiding the main content container when not on screen */
+    overflow-x: hidden;   
+    /* Assigning the position - relative for the content sliding mechanic to function */
     position: relative;  
 }
 
 /* Styling individual main content classes */
+/* All main content div classes follow the same format as below */
 .einstein-main-content {
+    /* Ensuring the div class position is not affected by parent divs */
     position: absolute;
+    /* Positioning the div class */
     top: 5vh;
     left: 100vw;
 }
@@ -248,95 +282,134 @@ html, body {
 }
 
 /* Styling for text containers */
+/* Header Styling */
 h1 {
+    /* Defining header text font */
     font-family: 'EB Garamond';
 }
 h2 {
+    /* Defining header text color, font and size */
     color: white;
     font-family: 'EB Garamond'; font-size: 32px; 
+    /* Positioning and scaling header */
     right: 13vw;
     top: 42vh;
     width: 40vw;
     height: 40vh;
+    /* Ensuring the container position is not affected by parent divs */
     position: absolute;
+    /* Aligning the header text to the center of the container */
     text-align: center;
 }
 h3 {
+    /* Defining header text color, font and size */
     color: white;
     font-family: 'EB Garamond'; font-size: 40px; 
+    /* Positioning and scaling header */
     right: 3vw;
     top: 20vh;
     width: 60vw;
     height: 40vh;
+    /* Ensuring the container position is not affected by parent divs */
     position: absolute;
+    /* Aligning the header text to the center of the container */
     text-align: center;
 }
+/* Paragraph Styling */
 .p1 {
+    /* Positioning paragraph and adding padding */
     width: 30vw;
     height: 40vh;
     padding: 20px;
-    font-family: Verdana, Geneva, sans-serif;
+    /* Defining header text color and font */
     color: #393E41;
+    font-family: Verdana, Geneva, sans-serif;
+    /* Aligning the header text to the center of the container */
     text-align: center;
+    /* Defining the background colour and opacity of the paragraph, as well as adding a border */
     background-color: rgba(88,123,127,0.5);
     border-radius: 25px;
+    /* Ensuring the container position is not affected by parent divs */
     position: absolute;
+    /* Positioning paragraph */
     right: 18vw;
     top: 50vh;
 }
 .p2 {
+    /* Positioning paragraph and adding padding */
     width: 50vw;
     height: 110vh;
     padding: 20px;
-    font-family: Verdana, Geneva, sans-serif;
+    /* Defining header text color and font */
     color: #393E41;
+    font-family: Verdana, Geneva, sans-serif;
+    /* Aligning the header text to the left of the container */
     text-align: left;
+    /* Defining the background colour and opacity of the paragraph, as well as adding a border */
     background-color: rgba(88,123,127,0.5);
     border-radius: 25px;
+    /* Ensuring the container position is not affected by parent divs */
     position: absolute;
+    /* Positioning paragraph */
     right: 8vw;
     top: 30vh;
 }
 
 /* Styling for arrows */
 .arrow-left img {
+    /* Layering and scaling the left arrow */
     z-index: 2;
     width: 3vw;
     height: auto;
+    /* Positioning the left arrow */
     left: 2vw;
     top: 55vh;
+    /* Ensuring the container position is not affected by parent divs */
     position: absolute;
+    /* Changing the cursor to 'pointer' when hovering over any image */
     cursor: pointer;
 }
 .arrow-right img {
+    /* Layering and scaling the left arrow */
     z-index: 2;
     width: 3vw;
     height: auto;
+    /* Positioning the left arrow */
     right: 2vw;
     top: 55vh;
+    /* Ensuring the container position is not affected by parent divs */
     position: absolute;
+    /* Changing the cursor to 'pointer' when hovering over any image */
     cursor: pointer;
 }
 
 /* Formatting and positioning all main images*/
 .main-images {
+    /* Positioning main images */
     display: flex;                    
     justify-content: flex-start;       
     align-items: center;               
     width: 100vw;                      
-    height: 100vh;                     
-    overflow-x: hidden;                                  
+    height: 100vh;     
+    /* Ensuring the images do not display when off screen */
+    overflow-x: hidden;    
+    /* Assigning the position - relative for the content sliding mechanic to function */
     position: relative;              
 }
 
-/* Main image container styling*/
+/* Styling the container div for the main page images */
 .main-images div {
-    z-index: 1;
-    position: absolute;              
+    /* Ensuring the container position is not affected by parent divs */
+    position: absolute;   
+    /* Scaling the container div */
     height: 75vh;                      
-    width: auto;                       
-    cursor: pointer;
-    margin-top: 25vh;               
+    width: auto;  
+    /* Ensuring the div is on the correct layer */
+    z-index: 1;
+    /* Positioning the container div */
+    margin-top: 25vh;  
+    /* Changing the cursor to 'pointer' when hovering over any image */
+    cursor: pointer;             
 }
 
 /* Positioning the main images */
@@ -371,62 +444,72 @@ h3 {
     left: 912vw;                     
 }
 
-/* Styling the images */
+/* Styling all the images for the main page */
 .main-images img {
+    /* Scaling the images to fill the container */
     height: 100%;                   
-    width: auto;                     
-    object-fit: contain;               
-    border-radius: 10px;
+    width: auto;
+    object-fit: contain;
+    /* Animating the slide in and out for the images */
     transition: transform 0.3s ease-in-out;
 }
 
-/* Scale figure images when hovering over them */
+/* Scaling figure images when hovering over them */
 .main-images img:hover {
     transform: scale(1.1);         
 }
 
-/* Info images container styling*/
+/* Styling the container for all info page images */
 .info-images {
+    /* Scaling the container */
     width: 100vw;
     height: auto;
+    /* Ensuring the position is not affected by the parent divs */
     position: absolute;
-    top: 0;
-    left: 0;
+    /* Ensuring the images display on the correct layer */
     z-index: 0; 
+    /* Preventing the images from displaying when not on screen */
     overflow-x: hidden; 
+    /* Creating the grid/layout of the images */
     display: flex; 
     justify-content: flex-start;
 }
 
 /* 'Who' images container styling */
 .who-images {
-    position: relative;
+    /* Scaling image container */
     width: 15vw;
     height: auto;
+    /* Assigning the position - relative for the content sliding mechanic to function */
+    position: relative;
 }
-
 /* 'Who' images styling */
 .who-images img {
+    /* Ensuring the images fill the container */
     width: 100%;
     height: auto;
+    /* Assigning the position - relative for the content sliding mechanic to function */
     position: absolute;
 }
 
 /* 'Accomplishments' images container styling */
 .acc-images {
-    position: relative;
+    /* Scaling image container */
     width: 15vw;
     height: auto;
+    /* Assigning the position - relative for the content sliding mechanic to function */
+    position: relative;
 }
-
 /* 'Accomplishments' images styling */
 .acc-images img {
+    /* Ensuring the images fill the container */
     width: 100%;
     height: auto;
+    /* Assigning the position - relative for the content sliding mechanic to function */
     position:relative;
 }
 
-/* Positioning 'Who' info images */
+/* Positioning and layering the 'Who' info images */
 .who-1 {
     left: 8vw;
     top: 15vh;  
@@ -448,7 +531,7 @@ h3 {
     z-index: 4;
 }
 
-/* Positioning 'Accomplishments' info images */
+/* Positioning and layering the 'Accomplishments' info images */
 .acc-1 {
     left: 93vw;
     top: 15vh;  
@@ -470,58 +553,79 @@ h3 {
     z-index: 4;
 }
 
-/* Info content container styling */
+/* Styling the info content div */
 .info-content {
     justify-content: flex-start;
+    /* Scaling the info content container */
     width: 100%;
     height: 100vh;
-    overflow-x: hidden;
+    /* Assigning the position - relative for the content sliding mechanic to function */
     position: relative;  
+    /* Positioning the content container */
     top: -5vh;  
 }
 
 /* Styling content boxes */
 .info-content-one {
+    /* Ensuring the position of the content box remains independant of the container */
     position: absolute;
+    /* Positioning the content box */
     top: 5vh;
     left: 100vw;
 }
 .info-content-two {
+    /* Ensuring the position of the content box remains independant of the parent divs */
     position: absolute;
+    /* Positioning the content box */
     top: 5vh;
     left: 200vw;
 }
 
+/* Styling the video container div class */
 .info-videos {
+    /* Ensuring all iframes appear in the grid format */
     justify-content: flex-start;
+    /* Ensuring all content is centered to the container div */
     align-content: center;
+    /* Scaling the container div */
     width: 100vw;
     height: 100vh;
+    /* Positioning the container div */
     top:-90vh;  
     left: 406.5vw;
+    /* Assigning the position - relative for the content sliding mechanic to function */
     position: relative;
 }
 
+/* Styling the iframes themselves*/
 .info-videos iframe {
+    /* Adding padding around each iframe */
     padding: 0.5vw;
-    overflow-x: hidden;
 }
 
 /* Styling website footer */
 footer {
+    /* Ensuring the position is not affected by parent divs */
     position: absolute;
-    align-content: center;
+    /* Scaling the footer */
     width: 100vw;
     height: 25vh;
+    /* Positioning the footer */ 
     bottom: -25vh;
+    /* Changing the background and text colours */
     background-color: #393E41;
     color: white;
+    /* Adding padding to the footer container */
     padding: 2vw;
 }
 
+/* Styling for the copright <p> in the footer */
 .copyright {
+    /* Ensuring the position is not affected by parent divs */
     position: absolute;
+    /* Changing the font */
     font-family: Verdana, Geneva, sans-serif;
+    /* Positioning the text */
     left: 39.5vw;
     bottom: 1vh;  
 }
