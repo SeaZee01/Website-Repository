@@ -631,4 +631,64 @@ footer {
     bottom: 1vh;  
 }
 
+/* Media query to manage resizing elements for mobile */
+@media only screen and (max-width: 840px) {
+    /* Ensuring the pop-ups resize correctly */
+    .popup-one .popup-one-text {
+        width: 20%;
+        left: 40%;
+        font-size: 12px;
+    }
+    /* Positioning the title image */
+    .title {
+        bottom: 0vh;
+    }
+    /* Disabling content that doesn't fit a mobile friendly design */
+    .main-content div, .info-images div {
+        display: none;
+    }
+    /* Resizing main images */
+    .main-images img {
+        width: 75vw;
+        height: 75vh;
+    }
+    /* Positioning main images */
+    .main-images div {
+        margin-top: 29vh;
+    }
+    /* Resizing the arrows */
+    .arrow-left img {
+        width: 5vw;
+        height: auto;   
+    }
+    .arrow-right img {
+        width: 5vw;
+        height: auto;
+    }
+    /* Positioning the content container */
+    .info-content {
+        right: 15vw;
+    }
+    /* Resizing info page headers */
+    h3 {
+        font-size: 25px;
+    }
+    /* Resizing and positioning content paragraphs */
+    .p2 {
+        width: 65vw;
+        height: 220vh;
+        right: 0vw;
+    }
+    /* Positioning embedded videos */
+    .info-videos {
+        left: 415vw;
+    }
+    /* Resizing iframes for embedded videos */
+    .info-videos iframe {
+        width: 35%;
+        height: auto;
+    }
+    
+}
+
     
