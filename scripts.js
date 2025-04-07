@@ -4,10 +4,7 @@
 
     // Defining console directly 
     var console = window.console || {
-        log: function () {},
-        error: function () {},
-        warn: function () {},
-        info: function () {}
+        log: function () {}
     };
 
     // Run script when the DOM content has fully loaded
@@ -150,8 +147,6 @@
                 // Toggle the title page activity state
                 isSlideUp = !isSlideUp;
             });
-        } else {
-            console.warn('titlePage element not found!');
         }
 
         // Update position function (this allows the arrow opacity to update based off the active position)
