@@ -5,9 +5,6 @@
     // Defining console directly 
     var console = window.console || {
         log: function () {},
-        error: function () {},
-        warn: function () {},
-        info: function () {}
     };
 
     // Run script when the DOM content has fully loaded
@@ -129,8 +126,6 @@
                 siteTitle.style.transform = "translateY(" + customSlideDownAmount + "vh) scale(" + customScaleDownAmount + ")";
                 siteTitle.style.transition = 'transform 0s';
             }
-        } else {
-            console.warn('titlePage element not found!');
         }
 
         // Update position function (this allows the arrow opacity to update based off the active position)
