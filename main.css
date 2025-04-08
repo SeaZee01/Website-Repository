@@ -688,7 +688,20 @@ footer {
         width: 35%;
         height: auto;
     }
+    /* Resizing title images */
+    .title-images img {
+        width: 15vw;
+        height: 15vw;
+    }
     
+    .churchill-title-image {
+    bottom: 9vh;
+    right: 19vw;
+    }
+    .newton-title-image {
+    bottom: 9vh;
+    left: 19vw;
+}
 }
 
     
